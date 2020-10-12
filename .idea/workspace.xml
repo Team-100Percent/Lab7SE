@@ -26,11 +26,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="592fdf41-d1a5-45d9-bc87-87e7df47dcea" name="Default Changelist" comment="added factorial">
-      <change afterPath="$PROJECT_DIR$/.idea/Lab7SE.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,6 +73,7 @@
       <option name="presentableId" value="Default" />
       <updated>1602488758588</updated>
       <workItem from="1602488759723" duration="8157000" />
+      <workItem from="1602517936698" duration="105000" />
     </task>
     <task id="LOCAL-00001" summary="Ilyar's 1/x commit">
       <created>1602490346580</created>
@@ -132,6 +129,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Ilyar's 1/x commit" />
