@@ -4,11 +4,9 @@
     <meta charset="UTF-8">
     <title>Calculator</title>
     <link rel="stylesheet" href="style.css">
-    <script src="main.js"></script>
 </head>
 <body>
 <div class="panel">
-
     <form name="form">
         <div class="screen">
             <table class="sctable" >
@@ -41,18 +39,15 @@
             <input class="equelp"  value="=" style="overflow: scroll" disabled>
             <input class="res" name="result" placeholder="" style="overflow: scroll" disabled>
         </div>
-
         <div >
             <table class="inputidiv">
-                <tr>
+                <tr> 
+
+
                 	<td><input type="button" value="!" onclick="getopcode('fac')"></td>
+
                     <td><input type="button" value="&pi;" onclick="get_symbyl()"></td>
-<<<<<<< HEAD
-                    <td><input type="button" value="1/x" onclick="back()"></td>
-=======
-                    <td><input type="button" value="1/x" onclick="getopcode('1/x')"></td>
-                    <td><input type="button" value="!" onclick="getopcode('fac')"></td>
->>>>>>> origin/main
+
                 </tr>
                 <tr>
                     <td><input type="button" value="7" onclick="getvalue(7)"> </td>
@@ -71,9 +66,9 @@
                     <td><input type="button" value=")" onclick="getopcode(')')"></td>
                 </tr>
                 <tr>
-                    <td><input type="button" value="1"onclick="getvalue(1)"></td>
-                    <td><input type="button" value="2"onclick="getvalue(2)"></td>
-                    <td><input type="button" value="3"onclick="getvalue(3)"></td>
+                    <td><input type="button" value="1" onclick="getvalue(1)"></td>
+                    <td><input type="button" value="2" onclick="getvalue(2)"></td>
+                    <td><input type="button" value="3" onclick="getvalue(3)"></td>
                     <td><input type="button" value="-" onclick="getopcode('-')"></td>
                     <td><input type="button" value="x^2" onclick="getopcode('s')"></td>
                     <td><input type="button" value="&radic;" onclick="getopcode('ss')"></td>
@@ -84,24 +79,11 @@
                     <td><input type="button" value="%" onclick="getopcode('%')"></td>
                     <td><input type="button" value="+" onclick="getopcode('+')"></td>
                     <td colspan="2"><input type="button" class="eq" value="=" onclick="equal()"></td>
-
                 </tr>
-
-
             </table>
-
-
         </div>
     </form>
-
-
-
 </div>
-<<<<<<< HEAD
-<div>TEST</div>
 
-=======
-<script src="main.js"></script>
->>>>>>> origin/main
 </body>
 </html>
