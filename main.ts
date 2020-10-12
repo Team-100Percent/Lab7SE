@@ -1,4 +1,3 @@
-
 function getvalue(num:number){
     let a:any = document.forms[0]["textview"];
     a.value+=num;
