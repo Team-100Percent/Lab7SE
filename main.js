@@ -15,6 +15,7 @@ function get_symbyl(){
 
 function getopcode(opt) {
     let a = document.forms[0]["textview"];
+
     if (a.value != "") {
 
         if (opt == "s") {
@@ -29,7 +30,6 @@ function getopcode(opt) {
         else {
             a.value += opt;
         }
-
     }
     else if (opt == "(" || opt == ")") {
         a.value += opt;
@@ -59,26 +59,36 @@ function zero() {
 
 function equal() {
 
-    let a = document.forms[0]["result"];
-    let b =document.forms[0]["textview"];
-    let c = b.value.replace(PI,'3.14');
+    let a = document.forms[0]["result"].value ;
+    let textview = document.forms[0]["textview"];
+    let c = textview.value.replace(PI,'3.14');
 
-    a.value = c;
+    a = c;
 
-    if(i=>1){
-        b.value+=')';
+    function addChar(char,n = 1){
+        while (n > 0) {
+            console.log(n);
+            textview.value += char;
+            n--;
+        }
     }
-    var temp = eval(document.forms[0]["textview"].value);
+
+    if(I >= 1){
+        addChar(')',I) ;
+        I =0 ; 
+    }
+
+    let temp = eval(document.forms[0]["textview"].value);
     if (temp == "Infinity") {
-        a.value = "Hа ноль нельзя делить";
+        a = "Hа ноль нельзя делить";
     }
     else if (document.forms[0]["textview"].value == '') {
-        a.value = "Введите выражение";
+        a = "Введите выражение";
     }
     else {
         let table = document.getElementsByTagName("table")[0];
 
-        a.value = temp;
+        a = temp;
         
         if (table.rows.length >= 3) {
             table.deleteRow(0);
