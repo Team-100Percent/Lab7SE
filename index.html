@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+</head>
+<body>
+<div class="panel">
+
+    <form name="form">
+        <div class="screen">
+            <table class="sctable" >
+                <tr>
+                    <td>
+                    </td>
+                    <td>
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    </td>
+                    <td>
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    </td>
+                    <td>
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+            </table><hr>
+            <input class="textview" name="textview" placeholder="0" style="overflow: scroll" disabled>
+            <input class="equelp"  value="=" style="overflow: scroll" disabled>
+            <input class="res" name="result" placeholder="" style="overflow: scroll" disabled>
+        </div>
+
+        <div >
+            <table class="inputidiv">
+                <tr>
+                    <td><input type="button" value="sin" onclick="sinus()"> </td>
+                    <td><input type="button" value="cos" onclick="getvalue(8)"></td>
+                    <td><input type="button" value="tan" onclick="getvalue(9)"></td>
+                    <td><input type="button" value="&pi;" onclick="get_symbyl()"></td>
+                    <td><input type="button" value="1/x" onclick="back()"></td>
+                    <td><input type="button" value="!" onclick="getopcode('fac')"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="7" onclick="getvalue(7)"> </td>
+                    <td><input type="button" value="8" onclick="getvalue(8)"></td>
+                    <td><input type="button" value="9" onclick="getvalue(9)"></td>
+                    <td><input type="button" value="/" onclick="getopcode('/')"></td>
+                    <td><input type="button" value="&larr;" onclick="back()"></td>
+                    <td><input type="button" value="C" onclick="clean()"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="4" onclick="getvalue(4)"></td>
+                    <td><input type="button" value="5" onclick="getvalue(5)"></td>
+                    <td><input type="button" value="6" onclick="getvalue(6)"></td>
+                    <td><input type="button" value="*" onclick="getopcode('*')"></td>
+                    <td><input type="button" value="(" onclick="getopcode('(')"></td>
+                    <td><input type="button" value=")" onclick="getopcode(')')"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="1"onclick="getvalue(1)"></td>
+                    <td><input type="button" value="2"onclick="getvalue(2)"></td>
+                    <td><input type="button" value="3"onclick="getvalue(3)"></td>
+                    <td><input type="button" value="-" onclick="getopcode('-')"></td>
+                    <td><input type="button" value="x^2" onclick="getopcode('s')"></td>
+                    <td><input type="button" value="&radic;" onclick="getopcode('ss')"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="0" onclick="zero()"></td>
+                    <td><input type="button" value="." onclick="getopcode('.')"></td>
+                    <td><input type="button" value="%" onclick="getopcode('%')"></td>
+                    <td><input type="button" value="+" onclick="getopcode('+')"></td>
+                    <td colspan="2"><input type="button" class="eq" value="=" onclick="equal()"></td>
+
+                </tr>
+
+
+            </table>
+
+
+        </div>
+    </form>
+
+
+
+</div>
+
+</body>
+</html>
