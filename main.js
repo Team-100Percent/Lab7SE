@@ -1,4 +1,4 @@
-var pi  = 'п'
+var pi  = 'п';
 function getvalue(num) {
     var a = document.forms[0]["textview"];
     a.value += num;
@@ -15,10 +15,13 @@ function getopcode(opt) {
     if (a.value != "") {
         if (opt == "s") {
             a.value += "**2";
+        }else if(opt=='1/x'){
+            a.value = '1/'+a.value;
         }
         else {
             a.value += opt;
         }
+
     }
     else if (opt == "(" || opt == ")") {
         a.value += opt;
@@ -46,13 +49,9 @@ function equal() {
     let c = b.value.replace(pi,'3.14');
     c = b.value.replace('!','fac');
     a.value = c;
-
-
     if(i==1){
         b.value+=')';
     }
-
-
     var temp = eval(document.forms[0]["textview"].value);
     if (temp == "Infinity") {
         a.value = "Hа ноль нельзя делить";
@@ -93,9 +92,10 @@ function sinus(x) {
     a.value = Math.sin(x);
 
 }
-function fac(x){
+function !(x){
     let res = 1;
-    for(int i = 0; i <=x; i++){
+
+    for(let i = 0; i <=x; i++){
         if(x==0){
             res=1;
         }
@@ -105,4 +105,5 @@ function fac(x){
     }
     return res;
 }
+
 
