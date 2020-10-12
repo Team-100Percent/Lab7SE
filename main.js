@@ -1,4 +1,5 @@
 var pi  = 'п';
+var i =0;
 function getvalue(num) {
     var a = document.forms[0]["textview"];
     a.value += num;
@@ -9,7 +10,7 @@ function get_symbyl(){
     a.value='п';
 
 }
-var i =0;
+
 function getopcode(opt) {
     var a = document.forms[0]["textview"];
     if (a.value != "") {
