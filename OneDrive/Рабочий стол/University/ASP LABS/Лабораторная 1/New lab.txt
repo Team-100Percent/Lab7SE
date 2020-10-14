@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset = "UTF-8"/>
+		<title> WELCOME TO GAME </title>
+		<script src = "lab.js"> </script>
+		<link href="lab.css" rel="stylesheet" type="text/css"/>
+	</head>
+	
+	<body>
+			<p> <a id = "Newgame" > Welcome to <strong> COIN.com </strong> </a> </p>
+			<button id = "Start" onclick = "Start()"> НОВАЯ ИГРА </button>
+			<div> </div>
+			<div id = "Score1"> 0 </div>
+			<div id = "Score2"> 0 </div>
+			<div id = "coin"> 0 </div>
+			<div> </div>
+			<b id = "Allscore1"> CЧЁТ ИГРОКА 1 </b>
+			<b id = "Allscore2"> СЧЁТ ИГРОКА 2 </b>
+			<div> </div>
+			<button id = "push" onclick = "Push()"> КРУТИТЬ МОНЕТКУ </button>
+			<div> </div>
+			<button id = "stop" onclick = "Stop()" > ЗАФИКСИРОВАТЬ </button>
+			<div> </div>
+			<b id = "End"> Thanks for play! </b>		
+	</body>
+	</html>
